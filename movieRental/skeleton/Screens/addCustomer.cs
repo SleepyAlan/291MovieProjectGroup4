@@ -137,16 +137,13 @@ namespace movieRental
                                         {
                                             MessageBox.Show("Error: Record not inserted correctly");
                                         }
-                                        else
-                                        {
-                                            MessageBox.Show("Customer inserted succesfully !");
-                                            ClearFormFields();
-                                        }
                                     }
                                 }
                             }
                         }
                     }
+                    MessageBox.Show("Customer inserted succesfully !");
+                    ClearFormFields();
                 }
                 catch (Exception ex)
                 {
@@ -155,6 +152,11 @@ namespace movieRental
 
 
 
+            }
+
+            else
+            {
+                MessageBox.Show("Fill in Necessary fields: First & Last name, Email");
             }
         }
 
